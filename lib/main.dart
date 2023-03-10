@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:how_to_set_design_system/common/config/app_colors.dart';
 
 void main() {
   runApp(const MyApp());
@@ -71,9 +72,12 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: AppColors.surface3(Theme.of(context).colorScheme),
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
+        title: Text(
+          widget.title,
+        ),
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
