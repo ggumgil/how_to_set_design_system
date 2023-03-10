@@ -40,6 +40,25 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  build_runner:
+  flutter_gen_runner:
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/img/logoApps.png"
+
+  flutter_test:
+    sdk: flutter
+
+flutter_gen:
+  output: lib/common/constant/ # Optional (default: lib/gen/)
+  # Optional
+  integrations:
+    flutter_svg: true
+    # flare_flutter: true
+    # rive: true
+    # lottie: true
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -75,17 +94,27 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+  fonts:
+    - family: Pretendard
+      fonts:
+        - asset: assets/font/Pretendard/Pretendard-Thin.otf
+          weight: 100
+        - asset: assets/font/Pretendard/Pretendard-ExtraLight.otf
+          weight: 200
+        - asset: assets/font/Pretendard/Pretendard-Light.otf
+          weight: 300
+        - asset: assets/font/Pretendard/Pretendard-Regular.otf
+          weight: 400
+        - asset: assets/font/Pretendard/Pretendard-Medium.otf
+          weight: 500
+        - asset: assets/font/Pretendard/Pretendard-SemiBold.otf
+          weight: 600
+        - asset: assets/font/Pretendard/Pretendard-Bold.otf
+          weight: 700
+        - asset: assets/font/Pretendard/Pretendard-ExtraBold.otf
+          weight: 800
+        - asset: assets/font/Pretendard/Pretendard-Black.otf
+          weight: 900
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

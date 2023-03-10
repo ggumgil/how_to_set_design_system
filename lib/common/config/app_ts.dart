@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-abstract class CouponTS {
-  /// 쿠폰몰 텍스트 스타일 from 디자인 팀
+import '../constant/fonts.gen.dart';
+
+abstract class AppTS {
+  /// 텍스트 스타일 from 디자인 팀
   static final caption = TextStyle(
-    color: lightColorScheme.onSurface,
     fontSize: 12.sp,
     fontWeight: FontWeight.w400,
     fontFamily: FontFamily.pretendard,
@@ -13,7 +14,6 @@ abstract class CouponTS {
   );
 
   static final bodyLarge = TextStyle(
-    color: lightColorScheme.onSurface,
     fontSize: 16.sp,
     fontWeight: FontWeight.w400,
     fontFamily: FontFamily.pretendard,
@@ -22,7 +22,6 @@ abstract class CouponTS {
   );
 
   static final bodyMedium = TextStyle(
-    color: lightColorScheme.onSurface,
     fontSize: 14.sp,
     fontWeight: FontWeight.w500,
     fontFamily: FontFamily.pretendard,
@@ -31,10 +30,10 @@ abstract class CouponTS {
   );
 
   static final bodySmall = TextStyle(
-    color: lightColorScheme.onSurface,
     fontSize: 12.sp,
     fontWeight: FontWeight.w400,
     fontFamily: FontFamily.pretendard,
     letterSpacing: 0.4,
     height: 18 / 12,
   );
+}
