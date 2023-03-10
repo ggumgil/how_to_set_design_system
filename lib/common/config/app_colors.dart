@@ -154,5 +154,5 @@ abstract class AppColors {
   };
 
   /// Custom Color
-  static Color? surface3(BuildContext context) => context.mounted ? Color.lerp(Theme.of(context).colorScheme.surface, Theme.of(context).colorScheme.primary, 0.11) : null;
+  static Color? surface3(ColorScheme colorScheme) => Color.lerp(colorScheme.surface, colorScheme.primary, 0.11);
 }
